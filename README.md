@@ -23,8 +23,7 @@ Repositório destinado ao desenvolvimento do desafio proposto na disciplina de D
    ```bash
    cd desafio_desenv_web
    ```
-3. Instale as dependências (caso aplicável):
-   npm install
+3. Abra o arquivo .html no seu navegador
 
 ## Colaboradores
 - Gabriel Oliveira (@GabrielDev0101) 
