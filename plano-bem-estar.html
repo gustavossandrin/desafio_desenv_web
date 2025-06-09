@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Plano de Bem-estar</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="#">Diário Emocional</a></li>
+                    <li>
+                        <a href="plano-bem-estar.html" class="active"
+                            >Plano de Bem-estar</a
+                        >
+                    </li>
+                    <li><a href="#">Contatos de Ajuda</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="mt-4">
+            <section class="weekly-goals d-flex flex-column align-items-center mb-4">
+                <h1 class="text-center mb-4">Plano de Bem-estar</h1>
+                <p>Aqui você pode escolher suas metas de acordo com seu estilo de vida.
+                </br>
+                Busque coisas que te ajudem a relaxar, como:
+                <ul class="custom-list text-start">
+                    <li>meta de caminhada semanal, seja por distância ou por tempo</li>
+                    <li>meditação guiada ou respiração consciente</li>
+                    <li>tempo offline ou longe de telas</li>
+                    <li>ler x páginas de um livro</li>
+                </ul>
+                    
+                </p>
+            </section>
+            
+
+            <form id="goal-form" class="goal-form">
+                <label for="goalInput" class="form-label"
+                    >Adicionar nova meta:</label
+                >
+                <div class="input-group">
+                    <input
+                        type="text"
+                        id="goalInput"
+                        class="form-control"
+                        placeholder="Ex: Beber 2L de água"
+                        required
+                    />
+                    <button type="submit" class="btn btn-primary">
+                        Adicionar
+                    </button>
+                </div>
+            </form>
+
+            <div
+                id="confirmation-message"
+                class="alert alert-success d-none"
+                role="alert"
+            >
+                Metas salvas com sucesso!
+            </div>
+
+            <table class="table table-striped" id="goalTable">
+                <thead>
+                    <tr>
+                        <th>Meta</th>
+                        <th>Concluída?</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Metas são inseridas aqui -->
+                </tbody>
+            </table>
+        </main>
+
+        <footer class="text-center mt-4 mb-4">
+            <p>
+                &copy; 2025 Saúde Mental em Foco. Todos os direitos reservados.
+            </p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="js/plano-bem-estar.js"></script>
+    </body>
+</html>

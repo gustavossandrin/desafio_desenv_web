@@ -50,7 +50,7 @@ main {
     flex-grow: 1;
 }
 
-#motivational-quote {
+#motivational-quote, .weekly-goals {
     background-color: white;
     padding: 2rem;
     border-radius: 8px;
@@ -59,7 +59,7 @@ main {
     margin: 0 auto;
 }
 
-#motivational-quote h1 {
+#motivational-quote h1, .weekly-goals h1 {
     color: #4682b4;
 }
 
@@ -113,6 +113,28 @@ main {
 
 .card h3 a:hover {
     text-decoration: underline;
+}
+
+.weekly-goals .custom-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.weekly-goals .custom-list li {
+    /* background-color: pink; */
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 2px;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.weekly-goals .custom-list li::before {
+    content: "🌿";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1rem;
 }
 
 footer {
