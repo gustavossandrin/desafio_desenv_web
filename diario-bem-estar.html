@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diário Emocional</title>
+  <link rel="stylesheet" href="diario.css">
+</head>
+<body>
+  <header>Diário Emocional</header>
+
+  <div class="container">
+    <form id="diaryForm">
+      <label for="entry">Como você está se sentindo hoje?</label>
+      <textarea id="entry" placeholder="Escreva seus pensamentos, sentimentos ou acontecimentos do dia..."></textarea>
+
+      <div class="mood-options">
+        <label>Escolha o seu humor:</label>
+        <input type="radio" id="feliz" name="mood" value="Feliz">
+        <label for="feliz">😀 Feliz</label><br>
+
+        <input type="radio" id="triste" name="mood" value="Triste">
+        <label for="triste">😢 Triste</label><br>
+
+        <input type="radio" id="ansioso" name="mood" value="Ansioso">
+        <label for="ansioso">😰 Ansioso</label><br>
+
+        <input type="radio" id="estressado" name="mood" value="Estressado">
+        <label for="estressado">😤 Estressado</label>
+      </div>
+
+      <button type="submit">Salvar Entrada</button>
+      <p id="message" class="success-message"></p>
+    </form>
+
+    <div id="entriesSection">
+      <div id="entriesList"></div>
+    </div>
+  </div>
+
+  <script src="diario.js"></script>
+</body>
+</html>
