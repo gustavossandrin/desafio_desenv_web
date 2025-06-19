@@ -13,35 +13,60 @@ body {
 }
 
 header {
-    background-color: #4682b4;
     color: white;
-    padding: 1rem 0;
     text-align: center;
+}
+
+.navbar {
+    background-color: #4682b4 !important;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
+.navbar-brand {
+    color: white !important;
     font-weight: bold;
-    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.5) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    padding: 1rem 1.5rem !important;
     transition: background-color 0.3s;
 }
 
-nav ul li a:hover, nav ul li a.active {
-    background-color: #5a9bdc;
+.navbar-nav .nav-link:hover, 
+.navbar-nav .nav-link.active {
+    background-color: #5a9bdc !important;
     border-radius: 5px;
+    color: white !important;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #4682b4;
+        border-radius: 8px;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    
+    .navbar-nav .nav-link {
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        margin-bottom: 0.5rem;
+    }
+    
+    .navbar-nav .nav-link:last-child {
+        border-bottom: none;
+    }
 }
 
 main {
