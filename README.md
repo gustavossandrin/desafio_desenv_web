@@ -23,7 +23,7 @@ Repositório destinado ao desenvolvimento do desafio proposto na disciplina de D
    ```bash
    cd desafio_desenv_web
    ```
-3. Abra o arquivo .html no seu navegador
+3. Abra o arquivo index.html no seu navegador
 
 ## Colaboradores
 - Gabriel Oliveira (@GabrielDev0101) 
